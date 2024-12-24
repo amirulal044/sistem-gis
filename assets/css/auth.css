@@ -1,0 +1,186 @@
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.card {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 15px;
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-footer {
+    background: transparent;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.form-floating label {
+    color: #6c757d;
+}
+
+.alert {
+    border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 15px;
+    }
+}
+
+/* Style untuk checkbox modern */
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-left: 0;
+    gap: 10px;
+    padding-left: 2rem;
+}
+
+.form-check-input {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0;
+    border: 2px solid #1e3c72;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    background-color: transparent;
+    flex-shrink: 0;
+}
+
+.form-check-input:checked {
+    background-color: #1e3c72;
+    border-color: #1e3c72;
+    animation: checkmark 0.2s ease-in-out;
+}
+
+.form-check-input:checked::after {
+    content: '✓';
+    position: absolute;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-check-input:hover {
+    border-color: #2a5298;
+    box-shadow: 0 0 10px rgba(42, 82, 152, 0.2);
+    transform: scale(1.05);
+}
+
+.form-check-label {
+    color: #495057;
+    font-size: 0.95rem;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-check-label i {
+    color: #1e3c72;
+    font-size: 1.1em;
+}
+
+/* Animasi untuk checkbox */
+@keyframes checkmark {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Efek hover untuk container checkbox */
+.form-check:hover .form-check-input {
+    border-color: #2a5298;
+    box-shadow: 0 0 15px rgba(42, 82, 152, 0.15);
+}
+
+/* Efek focus */
+.form-check-input:focus {
+    border-color: #2a5298;
+    box-shadow: 0 0 0 0.25rem rgba(42, 82, 152, 0.25);
+    outline: none;
+}
+
+/* Efek hover utama untuk semua elemen interaktif */
+.btn-primary,
+.form-control,
+.form-check-input,
+a.text-primary {
+    transition: all 0.3s ease;
+}
+
+/* Efek hover untuk button */
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
+}
+
+/* Efek hover untuk input */
+.form-control:hover,
+.form-control:focus {
+    border-color: #1e3c72;
+    box-shadow: 0 0 10px rgba(30, 60, 114, 0.1);
+}
+
+/* Efek hover untuk checkbox */
+.form-check-input:hover {
+    border-color: #1e3c72;
+    transform: scale(1.05);
+}
+
+/* Efek hover untuk link */
+a.text-primary:hover {
+    color: #2a5298 !important;
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+
+/* Menghapus efek hover yang tidak perlu */
+.card:hover,
+.card-header:hover,
+.form-check-label:hover {
+    transform: none;
+} 
